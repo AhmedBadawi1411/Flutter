@@ -14,25 +14,134 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body: Column(
-          children: [
-            Row(
-              children: [
-                Container(
-                  color: Colors.amber,
-                ),
-                const Column(
-                  children: [
-                    Text(
-                      "Title",
-                      style: TextStyle(fontSize: 16),
+        body: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Container(
+                    width: 120,
+                    height: 120,
+                    color: Colors.redAccent,
+                  ),
+                  SizedBox(
+                    height: 120,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: 220,
+                          height: 30,
+                          color: Colors.green,
+                        ),
+                        Container(
+                          width: 220,
+                          height: 80,
+                          color: Colors.greenAccent,
+                        ),
+                      ],
                     ),
-                    Text(lorim)
-                  ],
-                )
-              ],
-            ),
-          ],
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 120,
+                        color: Colors.blue,
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        height: 100,
+                        width: 120,
+                        color: Colors.blue,
+                      )
+                    ],
+                  ),
+                  Container(
+                    color: Colors.blueGrey,
+                    height: 210,
+                    width: 220,
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 260,
+                    height: 40,
+                    color: Colors.blueGrey,
+                  ),
+                  Container(
+                    width: 80,
+                    height: 40,
+                    color: Colors.redAccent,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 260,
+                    height: 40,
+                    color: Colors.blueGrey,
+                  ),
+                  Container(
+                    width: 80,
+                    height: 40,
+                    color: Colors.redAccent,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 260,
+                    height: 40,
+                    color: Colors.blueGrey,
+                  ),
+                  Container(
+                    width: 80,
+                    height: 40,
+                    color: Colors.redAccent,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Container(
+                width: 400,
+                height: 130,
+                color: Colors.amber,
+              ),
+            ],
+          ),
         ),
       ),
     );
