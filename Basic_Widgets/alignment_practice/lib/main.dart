@@ -13,7 +13,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          leadingWidth: 65,
+          leading: const Padding(
+            padding: EdgeInsets.only(top: 8, bottom: 8, left: 20, right: 8),
+            child: CircleAvatar(
+              radius: 50,
+              backgroundColor: Colors.white54,
+            ),
+          ),
+          title: const Text("Alignment Practice"),
+        ),
         body: Container(
           width: double.infinity,
           padding: const EdgeInsets.all(20),
